@@ -1,0 +1,9 @@
+Réponses aux questions de l'unité 6 : 
+
+0. le segment contenant le code doit avoir les permissions read, write et private. cela correspond à la derniere ligne dans l'extrait de l'affichage.
+1. les plages d'adresses sont conservées entre deux exécutions, car les données du programmes restent stockées à la meme adresse dans l'espace memoire
+2. la variable str se trouve dans le segment .data, et les données vers lesquels elle pointe se trouvent dans le meme segment. Les permissions de ce segment sont read et private. l'espace necessaire pour le stockage de la varible et son contenu est de 632 octects
+3. la variable alloc se trouve dans le segment .bss, et les données vers lesquels elle pointe se trouvent dans le segment heap. les permissions pour ces deux segments sont read et private.  8 octects sont necessaires pour stocker la variable alloc
+4. globvar_decl se trouve dans le segment .bss. les permissions sont read et private. pour le stockage des deux variable, 7 octects sont necessaires.
+5. globvar_init se trouve dans le segment .data les permissions sont read et private. pour le stockage des deux variable, 7 octects sont necessaires.
+6. la simple declaration d'une constante ne prends aucun octects dans le fichier binaire. le resultat de la commande size n'a pas évolué.
